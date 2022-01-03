@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Formulario de Registro </title>
+    <meta charset="UTF-8"/>       
+</head>
+<body>
+    <form>
+        <div>
+            <label>Nombre: * </label>
+            <input type="text" name="name" 
+            placeholder="Tu nombre..." >
+        </div>
+        <div>
+            <label>Apellido: * </label>
+            <input type="text" name="lastName" 
+            placeholder="Tu apellido..." >
+        </div>
+        <div>
+            <label>Email: * </label>
+            <input type="text" name="email" 
+            placeholder="Tu email..." >
+        </div>
+        <div>
+            <label>Password: * </label>
+            <input type="password" name="password" 
+            placeholder="Tu nueva contraseña..." >
+        </div>
+        <div>
+            <label>Confirmar password: * </label>
+            <input type="password" name="confirmedPassword" 
+            placeholder="Repite la contraseña..." >
+        </div>
+        <div>
+            <label>Fecha de nacimiento: </label>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <label>
+                Identidad de género:
+            </label>
+            <div>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="genero" id="masc">
+                <label for="fem">Femenino</label>
+                <input type="radio" name="genero" id="fem">
+                <label for="noBin">No Binario</label>
+                <input type="radio" name="genero" id="noBin">
+                <label for="noAns">Prefiero no responder</label>
+                <input type="radio" name="genero" id="noAns">
+            </div>        
+        </div>
+        <div>
+            <label>
+                Una pequeña descripción sobre mi:
+            </label>
+            <div>
+                <textarea name="comment" cols="50" rows="3"> Escribe algo breve sobre ti...</textarea>
+            </div>
+        </div>
+        <div>
+            <label> Lenguaje de programación favorito: </label>
+            <select name="lenguajes">
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C++</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="offers" id="offers" checked >
+            <label for="offers">Me gustaría recibir correos con actualizaciones.</label>
+        </div id="submitButton">
+            <input type="submit" value="Crear Cuenta">
+        <div>
+            <label> *Indica un campo requerido </label>
+        </div>
+    </form>
+</body>
+</html>
